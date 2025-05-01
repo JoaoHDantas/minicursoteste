@@ -28,7 +28,7 @@
 }
 body {
     background-color: var(--cor-de-fundo);
-
+    
 }
 
 #iphone-store{
@@ -50,13 +50,13 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 0.5rem 7rem 5rem 7rem;
+    padding: 2rem 7rem 5rem 7rem;
     position: relative;
     overflow: hidden;
     background-image: url('./MacBook\ Air\ -\ 1.png');
     background-size: cover;
     background-position: center;
-    height: 75.7vh;
+    /* height: 75.7vh; */
 
 }
 h1 {
@@ -129,7 +129,30 @@ ul{
 }
 
 
+@media (max-width: 1250px) {
+    .image-placeholder img{
+        height: 25rem;
+    }
+    
+    h1{
+        font-size: 2rem;
+    }
+    .buy-button{
+        margin-top: 10px;
+        padding: 10px 20px;
+        border-radius: 30px;
+    }
+    nav ul li{
+        font-size: 15px;
+    }
+    #iphone-store{
+        font-size: 20px;
+    }
+    .section{
+        padding: 1.5rem 2rem 5rem 2rem;
+    }
 
+}
 
 /* Iphonexr */
 @media (max-width: 768px) {
@@ -139,9 +162,11 @@ ul{
     #bola-background{
         display: none;
     }
+
     .section {
         flex-direction: column;
         padding: 2rem 1rem;
+        background-image: none;
     }
     .image-placeholder {
         order: -1;
